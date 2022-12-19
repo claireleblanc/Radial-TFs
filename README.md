@@ -14,8 +14,8 @@ To get intersect peaks:
 `bedtools intersect -a {REP_1_NAME}.narrowPeak -b {REP_2_NAME}.narrowPeak > total_intersect.bed`
 
 To get top intersect peaks: 
-`sort -t$'\t' -k5 -nr {REP_NAME}.narrowPeak | head -500 > {REP_NAME}_score_sorted_top.narrowPeak
 
+`sort -t$'\t' -k5 -nr {REP_NAME}.narrowPeak | head -500 > {REP_NAME}_score_sorted_top.narrowPeak 
 bedtools intersect -a {REP_1_NAME}_peaks_score_sorted_top.narrowPeak -b {REP_1_NAME}_peaks_score_sorted_top.narrowPeak > top_intersect_score.bed`
 
 
